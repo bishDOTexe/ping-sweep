@@ -3,8 +3,9 @@
 echo "What is your network ID? (First 3 octets of IP Address) " 
 read ip_first
 
-if [ "$ip_first" == "" ]
-echo "You forgot to add the first 3 octets of an IP Address!"
+if [ "$ip_first" == "" ] 
+then
+echo "You forgot to add the first 3 octets of an IP Address! Try again."
 
 else
 echo "Successful ping results output to file.txt in this directory!"
