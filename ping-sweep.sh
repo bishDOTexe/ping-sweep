@@ -1,5 +1,27 @@
 #!/bin/bash
 
+
+echo "Do you know your network ID of the network you intend to ping-sweep? (Y or N)"
+read answer
+
+if [ $answer == "N" ] || [ $answer == 'n' ]
+then
+echo "Here is the network info of the network currently connected to interface eth0:"
+echo " "
+VAR=$(ifconfig | grep eth0 -A 1)
+echo ${VAR}
+
+elif [ $answer == "Y" ] || [ $answer == 'y' ]
+then
+echo "Great! Please continue." 
+
+else
+echo "Please try again and answer the question!"
+exit
+fi
+
+echo " " 
+
 echo "What is your network ID? (First 3 octets of IP Address) " 
 read ip_first
 
