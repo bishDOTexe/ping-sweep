@@ -1,5 +1,5 @@
 # ping-sweep
-Ping sweep a /24 - /32 network.
+Ping sweep a /24 network.
 
 This script is a work in progress.
 
