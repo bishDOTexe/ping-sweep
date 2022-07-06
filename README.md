@@ -1,10 +1,14 @@
 # ping-sweep
-Ping sweep a /24 network.
-
-This script is a work in progress.
+Ping sweep a /24 network. (This script is a work in progress)
 
 Created as public repository for Github experience purposes.
 
 Please run this script with sudo or as root.
 
-Input validation has been added to verify IP address format.
+Input validation has been added to verify IPv4 address format.
+
+Practical use can include feeding the output file.txt into an nmap scan. See example below:
+
+```bash 
+for ip in $(cat file.txt); do nmap $ip; done
+```
