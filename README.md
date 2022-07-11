@@ -1,4 +1,4 @@
-# ping-sweep
+# ping-sweep Bash Script
 Ping sweep a /24 network. (This script is a work in progress)
 
 Created as public repository for Github experience purposes.
@@ -12,3 +12,7 @@ Practical use can include feeding the output file.txt into an nmap scan. See exa
 ```bash 
 for ip in $(cat file.txt); do nmap $ip; done
 ```
+
+# Planned Future Updates
+
+- Update logic that supports different subnet sizes
